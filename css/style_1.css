@@ -1,0 +1,111 @@
+*::before,
+*::after {box-sizing: border-box;}
+body {font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;}
+h1 {color: white;}
+h3 {color: rgb(14, 110, 94);}
+.base_article{height: 60px; max-width: auto;
+    background-color: rgb(49, 204, 178);
+    text-align: center;
+    padding-top: 1.5rem;
+    border-radius: 15px;
+    font-size:30px;}
+.h-c {background-color: white;
+    width: 100%;
+    max-width: auto;
+    margin-inline: auto;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:fixed;
+    z-index: 9999; } 
+.h-c nav ul {padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem 0.7rem;}
+.h-c nav li {list-style-type: none;}
+.h-c nav li a {padding: 0.5rem 1rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 550;
+    color:  rgb(14, 110, 94);
+    transition: all 0.1s ease-in-out;}
+.h-c nav li:hover a {background-color:rgb(14, 110, 94);
+    color: white;}  
+#l-p{background-image:url("stnurk_lp.png");
+    display: flex;
+    background-color:rgb(14, 110, 94);
+    color:white;
+    width: auto;
+    height: 440px;}
+#desk{padding-top: 190px; padding-left:80px; font-size: 16px;}
+main {display: flex;
+    padding: 1rem;
+    gap: 1rem;}
+.base-content{width: auto;
+    display: flex;
+    flex-flow: column;
+    padding-top: none;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;}
+#base-img{flex:1;
+    width: auto;
+    display: flex;
+    gap: 1rem 1rem;
+    align-items: center;}
+.img-ftr {height: 100%;
+    width: 180px;
+    object-fit: cover;
+    object-position: center;}
+#img-card {margin-inline: auto;
+    padding: 0.5rem;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);}
+#img-card:hover{ min-width: 220px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.568);
+    transition: all 0,5s ease-in-out;}
+.profil{ width: 350px; color: white;
+    background-color:rgb(14, 110, 94);
+    padding: 1rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    max-height: auto;
+    border-radius: 15px;}
+main aside .sosmed {height: 100%; display: flex;
+    margin-top:0px;
+    background-color: rgb(49, 204, 178);
+    border-radius: 15px;}
+main aside .sosmed ul {padding: 1.5rem 1rem;
+    margin: auto;
+    display: flex; flex-flow:column-reverse;
+    align-items:center;
+    gap: 1.5rem;}
+main aside .sosmed li {list-style-type: none;}
+main aside .sosmed li a {text-decoration: none;
+    color: rgb(14, 110, 94);
+    font-weight: bold;
+    transition: all 0.1s ease-in-out;}
+main aside .sosmed li a:hover {color:white;}
+footer {padding: 20px;
+    color: white;
+    background-color: rgb(14, 110, 94);
+    max-width: auto;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 550;}
+aside {flex: 1; margin-top: 20px;}
+header{display: inline;}
+
+@media screen and (max-width: 1200px){
+    main{flex-flow: column nowrap;}
+    main aside { align-self: center;}
+}
+@media screen and (max-width: 768px){
+    .hc nav ul {justify-content: center;}
+    main aside {align-self: stretch;}
+}
